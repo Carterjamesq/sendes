@@ -4,9 +4,7 @@ const Partners = () => {
   // Placeholder for the InfiniteLooper component
   return (
     <section className="partners">
-      <div className="container">
-        <span>Trusted partners</span>
-      </div>
+      <div className="container">{/* <span>Trusted partners</span> */}</div>
     </section>
   );
 };
