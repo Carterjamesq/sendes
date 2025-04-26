@@ -1,0 +1,51 @@
+@use "./colors.scss" as *;
+
+header {
+  padding: 16px 0 0 0;
+  margin-bottom: 98px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    padding: 0 17px;
+
+    .logo-navbar {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    padding: 28px 0;
+
+    a {
+      font-weight: 500;
+    }
+  }
+  .profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .profile {
+      position: relative;
+
+      .pulsing {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $indicator-color;
+      }
+    }
+  }
+}

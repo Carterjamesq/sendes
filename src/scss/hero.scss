@@ -1,0 +1,26 @@
+@use "./colors.scss" as *;
+
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+
+  .container {
+    .toaster {
+      display: inline;
+      border-radius: 100px;
+      padding: 9px 47px;
+      border: 1px solid $border-color;
+    }
+
+    h1 {
+      margin: 40px 0;
+    }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "./colors.scss" as *;
+
+.partners {
+  text-align: center;
+  overflow: hidden;
+
+  .infinite-looper-wrapper {
+    overflow: hidden;
+
+    width: 100%;
+  }
+
+  .infinite-looper {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    margin-top: 40px;
+  }
+
+  .infinite-looper img {
+    margin-right: 20px;
+    height: 50px;
+    display: flex;
+  }
+
+  .infinite-looper.left {
+    animation: scroll-left linear infinite;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "./colors.scss" as *;
+
+.primary-button {
+  background-color: $black;
+  color: $white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.secondary-button {
+  color: $white;
+  padding: 16px 28px;
+  border: 1px solid $border-color;
+  color: $black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: $black;
+  color: $white;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
