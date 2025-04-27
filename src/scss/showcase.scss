@@ -1,0 +1,46 @@
+@use "./colors.scss" as *;
+
+.showcase {
+  background-color: $showcase-bg;
+  padding: 20px 0;
+  overflow: hidden;
+  width: 100%;
+  .showcase__content-top {
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+
+    .showcase__item {
+      flex-shrink: 0;
+      border-radius: 12px;
+      overflow: hidden;
+
+      img {
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+  .showcase__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+    margin-left: 16px;
+    white-space: nowrap;
+  }
+  .showcase__item {
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      height: 300px; /* or whatever you need */
+      object-fit: cover;
+    }
+  }
+}

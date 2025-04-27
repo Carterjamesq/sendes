@@ -1,10 +1,11 @@
-@use "./header.scss";
-@use "./hero.scss";
+@use "./colors.scss" as *;
 @use "./buttons.scss";
 @use "./fonts.scss";
 @use "./typography.scss";
-@use "./colors.scss" as *;
+@use "./header.scss";
+@use "./hero.scss";
 @use "./partners.scss";
+@use "./showcase.scss";
 
 * {
   box-sizing: border-box;
