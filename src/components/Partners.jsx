@@ -27,7 +27,7 @@ const Partners = () => {
           transition={{
             repeat: Infinity,
             repeatType: "loop",
-            duration: 30,
+            duration: 100,
             ease: "linear",
           }}
         >

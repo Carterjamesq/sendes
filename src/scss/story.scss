@@ -1,0 +1,24 @@
+.story {
+  overflow: hidden;
+  padding: 100px 0;
+  .story__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex: 2 1 100px;
+
+    @media (max-width: 864px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .story__col {
+      flex: 1 1 200px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}

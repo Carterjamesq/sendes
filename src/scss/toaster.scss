@@ -1,0 +1,9 @@
+@use "./colors.scss" as *;
+
+.toaster {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 9px 47px;
+  border: 1px solid $border-color;
+  font-size: 14px;
+}

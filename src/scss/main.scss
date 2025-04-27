@@ -2,13 +2,18 @@
 @use "./buttons.scss";
 @use "./fonts.scss";
 @use "./typography.scss";
+@use "./toaster.scss";
 @use "./header.scss";
 @use "./hero.scss";
 @use "./partners.scss";
 @use "./showcase.scss";
+@use "./story.scss";
 
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,8 +35,18 @@ ol {
 }
 
 a {
+  position: relative;
   text-decoration: none;
   color: $black;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $indicator-color;
+    opacity: 1;
+    color: $black;
+  }
 }
 
 .container {

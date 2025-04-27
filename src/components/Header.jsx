@@ -18,8 +18,8 @@ const Header = () => {
           <nav className="header__nav">
             <ul className="header__list">
               <li className="header__item">
-                <a href="#services" className="header__link">
-                  Services
+                <a href="#story" className="header__link">
+                  Story
                 </a>
               </li>
               <li className="header__item">
