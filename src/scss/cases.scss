@@ -1,0 +1,100 @@
+@use "./colors.scss" as *;
+
+.cases {
+  position: relative;
+  background-color: $light-gray;
+  padding: 100px 0 50px 0;
+
+  .container {
+    text-align: center;
+    h2 {
+      margin-bottom: 50px;
+    }
+    .cases__content {
+      background-color: $white;
+      padding: 34px;
+      border-radius: 12px;
+      .case__section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        scroll-snap-align: start;
+      }
+
+      .case__grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        text-align: left;
+        gap: 24px;
+        margin-bottom: 50px;
+        position: sticky;
+        top: 1px;
+        background-color: $white;
+        border-radius: 12px;
+
+        @media (max-width: 1024px) {
+          grid-template-columns: 1fr;
+        }
+
+        .case__card:last-child {
+          background-color: $dark-gray;
+          border: 1px solid $border-color;
+          padding: 12px;
+          border-radius: 8px;
+        }
+
+        .case__card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          img {
+            border-radius: 8px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: -0.36px;
+            font-weight: 400;
+            padding: 0;
+          }
+          .case__card-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .divider {
+          margin-top: 15px;
+          height: 1px;
+          width: 100%;
+          background-color: $black;
+        }
+        .case__tags {
+          .case__tag {
+            margin-right: 20px;
+            display: inline-block;
+            border-radius: 100px;
+            padding: 9px 18px;
+            border: 1px solid $border-color;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cases {
+    .container {
+      padding: 0;
+      .cases__content {
+        padding: 0;
+      }
+    }
+  }
+}

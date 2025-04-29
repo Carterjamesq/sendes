@@ -1,0 +1,7 @@
+@use "./colors" as *;
+
+.faq {
+  background-color: $section-color;
+  color: $white;
+  padding: 100px 0;
+}

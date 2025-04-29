@@ -24,8 +24,13 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 40px;
+    line-height: 50px;
+    text-wrap: balanced;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 54px;
   }
   p {
     font-size: 16px;

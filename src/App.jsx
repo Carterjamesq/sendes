@@ -5,10 +5,10 @@ import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import Showcase from "./components/Showcase";
 import Story from "./components/Story";
+import Cases from "./components/Cases";
+import FAQ from "./components/FAQ";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />
@@ -16,6 +16,8 @@ function App() {
       <Partners />
       <Showcase />
       <Story />
+      <Cases />
+      <FAQ />
     </>
   );
 }
