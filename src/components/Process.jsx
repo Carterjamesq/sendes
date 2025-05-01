@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const Process = () => {
   return (
@@ -7,8 +6,8 @@ const Process = () => {
       <div className="toaster">
         <span>Project Scope</span>
       </div>
-      <h2>Our work process</h2>
-      <motion.div
+      <h2>My work process</h2>
+      <div
         className="process__grid"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +80,7 @@ const Process = () => {
             <h3>Project support</h3>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

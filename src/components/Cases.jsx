@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import contentfulClient from "../contentfulConfig.js";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { motion } from "framer-motion";
+
 import LocomotiveScroll from "locomotive-scroll";
 
 const Cases = () => {
@@ -54,7 +54,7 @@ const Cases = () => {
   }
 
   return (
-    <motion.section
+    <section
       className="cases"
       id="cases"
       initial={{ opacity: 0, y: 10 }}
@@ -112,7 +112,7 @@ const Cases = () => {
           ))}
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
