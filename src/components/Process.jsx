@@ -7,13 +7,7 @@ const Process = () => {
         <span>Project Scope</span>
       </div>
       <h2>My work process</h2>
-      <div
-        className="process__grid"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-      >
+      <div className="process__grid">
         <div className="grid__item">
           <span>01</span>
           <div className="grid__body">

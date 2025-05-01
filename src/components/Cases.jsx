@@ -54,26 +54,13 @@ const Cases = () => {
   }
 
   return (
-    <section
-      className="cases"
-      id="cases"
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <section className="cases" id="cases">
       <div className="container">
         <div className="toaster">
           <span>Helping clients achieve success</span>
         </div>
         <h2>Recent cases</h2>
-        <motion.div
-          className="cases__content"
-          initial={{ opacity: 0, y: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+        <div>
           {cases.map((item) => (
             <div
               key={item.sys.id}
@@ -110,7 +97,7 @@ const Cases = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
