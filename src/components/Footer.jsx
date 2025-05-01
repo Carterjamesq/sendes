@@ -18,7 +18,7 @@ const Footer = () => {
             rabchevskiy0@gmail.com
           </a>
           <div className="footer__social">
-            <a href="#!">
+            <a href="https://t.me/carterjames" target="_blank">
               <img src={whatsApp} />
             </a>
             <a href="#!">
@@ -27,7 +27,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__cta-text">
-          <h6>Get In Touch</h6>
+          <h6>
+            Get <span>In</span> Touch
+          </h6>
         </div>
         <div className="footer__copyrights">
           <span>2025 © Sendes All rights reserved</span>

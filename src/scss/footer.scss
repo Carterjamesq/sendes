@@ -44,6 +44,10 @@ footer {
       font-weight: 300;
       font-family: "DM Serif Display", serif;
       margin-bottom: 52px;
+
+      span {
+        color: $indicator-color;
+      }
     }
   }
 }
