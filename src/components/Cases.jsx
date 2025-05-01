@@ -63,7 +63,7 @@ const Cases = () => {
           {cases.map((item) => (
             <div
               key={item.sys.id}
-              className="case__grid"
+              className="case__body"
               ref={scrollRef}
               data-scroll-container
             >

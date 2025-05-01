@@ -18,10 +18,10 @@ const Footer = () => {
             rabchevskiy0@gmail.com
           </a>
           <div className="footer__social">
-            <a href="https://t.me/carterjames" target="_blank">
+            <a href="https://wa.me/+380674432922" target="_blank">
               <img src={whatsApp} />
             </a>
-            <a href="#!">
+            <a href="https://t.me/carterjames" target="_blank">
               <img src={telegram} />
             </a>
           </div>
