@@ -8,13 +8,13 @@ const Cases = () => {
   const [cases, setCases] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const scrollRef = useRef(null); // Reference for Locomotive Scroll container
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     const fetchCases = async () => {
       try {
         const response = await contentfulClient.getEntries({
-          content_type: "cases", // Replace with your Contentful content type ID
+          content_type: "cases",
         });
         setCases(response.items);
         setLoading(false);
@@ -34,10 +34,9 @@ const Cases = () => {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      lerp: 0.1, // Adjust for smoothness
+      lerp: 0.5, // Adjust for smoothness
     });
 
-    // Update Locomotive Scroll when cases are loaded
     scroll.update();
 
     return () => {
@@ -54,26 +53,13 @@ const Cases = () => {
   }
 
   return (
-    <section
-      className="cases"
-      id="cases"
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <section className="cases" id="cases">
       <div className="container">
         <div className="toaster">
           <span>Helping clients achieve success</span>
         </div>
-        <h2>Recent cases</h2>
-        <div
-          className="cases__content"
-          initial={{ opacity: 0, y: 1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+        <h2>Latest cases</h2>
+        <div className="cases__content">
           {cases.map((item) => (
             <div
               key={item.sys.id}

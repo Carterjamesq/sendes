@@ -46,8 +46,8 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 9vw;
+    line-height: 9vw;
     text-wrap: balance;
   }
   h2 {
@@ -57,5 +57,12 @@ p {
   p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 464px) {
+  h1 {
+    font-size: 20vw;
+    line-height: 17vw;
   }
 }

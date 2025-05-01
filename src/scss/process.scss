@@ -58,3 +58,16 @@
     }
   }
 }
+
+@media (max-width: 464px) {
+  .process {
+    padding: 16px;
+    .process__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    h3 {
+      font-size: 10vw;
+    }
+  }
+}

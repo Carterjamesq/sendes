@@ -51,6 +51,12 @@
           flex-direction: column;
           justify-content: space-between;
 
+          h3 {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 10px;
+          }
+
           img {
             border-radius: 8px;
           }
@@ -68,7 +74,6 @@
           }
         }
         .divider {
-          margin-top: 15px;
           height: 1px;
           width: 100%;
           background-color: $black;

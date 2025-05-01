@@ -60,3 +60,11 @@ footer {
     }
   }
 }
+
+@media (max-width: 464px) {
+  footer {
+    .footer__email {
+      font-size: 7vw;
+    }
+  }
+}
