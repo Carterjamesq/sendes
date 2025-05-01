@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}

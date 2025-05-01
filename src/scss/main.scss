@@ -8,8 +8,10 @@
 @use "./partners.scss";
 @use "./showcase.scss";
 @use "./story.scss";
+@use "./process.scss";
 @use "./cases.scss";
 @use "./faq.scss";
+@use "./footer.scss";
 
 * {
   box-sizing: border-box;
@@ -37,10 +39,22 @@ ol {
 }
 
 a {
-  position: relative;
   text-decoration: none;
   color: $black;
+
+  border-radius: 8px;
+}
+
+.header__link {
   padding: 10px 20px;
+}
+.header__link,
+.primary-button,
+.secondary-button,
+.cta-button {
+  position: relative;
+  text-decoration: none;
+
   transition: all 0.2s ease-in-out;
   border-radius: 8px;
 
@@ -60,4 +74,10 @@ a {
     max-width: 90%;
     padding: 0 20px;
   }
+}
+
+.container__content {
+  max-width: 95%;
+  padding: 0 20px;
+  margin: 0 auto;
 }

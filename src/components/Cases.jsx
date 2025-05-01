@@ -54,7 +54,14 @@ const Cases = () => {
   }
 
   return (
-    <section className="cases" id="cases">
+    <motion.section
+      className="cases"
+      id="cases"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="container">
         <div className="toaster">
           <span>Helping clients achieve success</span>
@@ -62,7 +69,7 @@ const Cases = () => {
         <h2>Recent cases</h2>
         <motion.div
           className="cases__content"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -105,7 +112,7 @@ const Cases = () => {
           ))}
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,0 +1,62 @@
+@use "./colors" as *;
+
+footer {
+  background-color: $light-black;
+  color: $white;
+  padding: 100px 0 50px 0;
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $dark-black;
+    margin: 62px 0 48px 0;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: $gray;
+  }
+
+  a {
+    color: $white;
+  }
+  .footer__email {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.28px;
+  }
+  .footer__social {
+    margin-top: 24px;
+    display: flex;
+    gap: 40px;
+  }
+  .footer__cta-text {
+    text-align: right;
+    h6 {
+      font-size: 120px;
+      line-height: 120px;
+      margin: 0;
+      font-weight: 300;
+      font-family: "DM Serif Display", serif;
+      margin-bottom: 52px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer__cta-text {
+      text-align: left;
+
+      h6 {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+  }
+}

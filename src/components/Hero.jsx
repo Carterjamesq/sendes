@@ -21,14 +21,13 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <h1>
-            Transforming visions
-            <br></br>
-            into digital solutions
+            Turning success into
+            <br></br>a key to growth
           </h1>
           <p>
-            We create websites that look stunning and drive results—elevating
+            I create stunning websites and apps that will help you
             <br></br>
-            your online presence to achieve your business goals.
+            get the maximum benefits of your business.
           </p>
         </motion.div>
 
@@ -42,7 +41,7 @@ const Hero = () => {
           <a className="cta-button" href="#!">
             Get a project quote
           </a>
-          <a className="secondary-button" href="#!">
+          <a className="secondary-button" href="#cases">
             See my works
           </a>
         </motion.div>
