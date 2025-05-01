@@ -54,13 +54,26 @@ const Cases = () => {
   }
 
   return (
-    <section className="cases" id="cases">
+    <section
+      className="cases"
+      id="cases"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="container">
         <div className="toaster">
           <span>Helping clients achieve success</span>
         </div>
         <h2>Recent cases</h2>
-        <div>
+        <div
+          className="cases__content"
+          initial={{ opacity: 0, y: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           {cases.map((item) => (
             <div
               key={item.sys.id}
