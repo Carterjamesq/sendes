@@ -1,0 +1,39 @@
+@use "./colors" as *;
+
+.tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 12px 12px 12px 0;
+  overflow: hidden;
+
+  li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid $border-color;
+    border-bottom: none;
+    background: $white;
+  }
+  li.active {
+    background: $black;
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+    color: $white;
+  }
+}
+
+.tab_container {
+  padding: 20px;
+  border: 1px solid $border-color;
+  background: $white;
+  border-radius: 0 12px 12px 12px;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.tab_content.active {
+  display: block;
+}
