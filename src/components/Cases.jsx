@@ -61,18 +61,6 @@ const Cases = () => {
           >
             Web apps
           </li>
-          <li
-            className={activeTab === "tab4" ? "active" : ""}
-            onClick={() => setActiveTab("tab4")}
-          >
-            Web Design
-          </li>
-          <li
-            className={activeTab === "tab5" ? "active" : ""}
-            onClick={() => setActiveTab("tab5")}
-          >
-            Systems
-          </li>
         </ul>
         <div className="tab_container">
           {activeTab === "tab1" && (
@@ -122,16 +110,6 @@ const Cases = () => {
           {activeTab === "tab3" && (
             <div id="tab3" className="tab_content">
               <h2>Web apps</h2>
-            </div>
-          )}
-          {activeTab === "tab4" && (
-            <div id="tab4" className="tab_content">
-              <h2>Web design</h2>
-            </div>
-          )}
-          {activeTab === "tab5" && (
-            <div id="tab4" className="tab_content">
-              <h2>Systems</h2>
             </div>
           )}
         </div>
