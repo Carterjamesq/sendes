@@ -6,7 +6,7 @@ const Cases = () => {
   const [cases, setCases] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [activeTab, setActiveTab] = useState("tab1"); // State for active tab
+  const [activeTab, setActiveTab] = useState("tab1");
 
   useEffect(() => {
     const fetchCases = async () => {
@@ -104,12 +104,12 @@ const Cases = () => {
           )}
           {activeTab === "tab2" && (
             <div id="tab2" className="tab_content">
-              <h2>Mobile apps</h2>
+              <h2>Coming soon</h2>
             </div>
           )}
           {activeTab === "tab3" && (
             <div id="tab3" className="tab_content">
-              <h2>Web apps</h2>
+              <h2>Coming soon</h2>
             </div>
           )}
         </div>
